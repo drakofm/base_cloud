@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel='stylesheet' href='styles.css'>
+        <title>My FCC Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet"> 
+    </head>
+    
+    <body>
+        <nav id='navbar'>
+            <ul>
+                <li><a href='#welcome-section'>About</a></li>
+                <li><a href='#project-section'>Projects</a></li>
+                <li><a href='#profile-section'>Contacts</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <section id='welcome-section'>
+                <div id='bg'></div>
+                <div class='parallax1'><h1>Hi!</h1></div>
+                <div class='parallax2'><h2>My name is <span id='name'>Igor Grabeklis</span></h2></div>
+                <div class='parallax3'><h3>and this is my <span style='opacity: 0.3'>test</span> portfolio</h3></div>
+                <div class='parallax4'><h4>Below you can see examples of my work</h4></div>
+            </section>
+            
+                
+            <section id='project-section'>
+                <a href='C:\Users\Igor Grabeklis\Desktop\FreeCodeCamp-projects\1. Tribute Page\Hayao Miyazaki Tribute Page.html' target='_blank'><figure>
+                    <img src='./project_1_preview.png' alt='Tribute page'><figcaption>Tribute page</figcaption></figure></a>
+                <a href='C:\Users\Igor Grabeklis\Desktop\FreeCodeCamp-projects\2. Registration Form\form-with-no-FCC_adapting\Register your D&D character.html' target='_blank'><figure>
+                    <img src='./project_2_preview.png' alt='Registration page'><figcaption>Registration page</figcaption></figure></a>
+                <a href='C:\Users\Igor Grabeklis\Desktop\FreeCodeCamp-projects\3. Technical Documentation\Clickjacking type attack.html' target='_blank'><figure>
+                    <img src='./project_3_preview.png' alt='Documentation page'><figcaption>Documentation page</figcaption></figure></a>
+                <a href='C:\Users\Igor Grabeklis\Desktop\FreeCodeCamp-projects\4. Landing Page\landing-page-html.html' target='_blank'><figure>
+                    <img src='./project_4_preview.png' alt='Landing page'><figcaption>Landing page</figcaption></figure></a>
+            </section>
+            
+            <section id='profile-section'>
+                <p>Find out more</p>
+                <div id='icons-div'>
+                <a href="https://www.freecodecamp.org/drakofm" target='_blank' id='profile-link'><img src='./icon_fcc.png' alt='FreeCodeCamp'></a>
+                <a href="https://www.facebook.com/sample_name/" target='_blank'><img src='./icon_fb.png' alt='Facebook'></a>
+                <a href="https://www.twitter.com/sample_name/" target='_blank'><img src='./icon_x.png' alt='X'></a>
+                <a href="https://www.facebook.com/sample_name/" target='_blank'><img src='./icon_gh.png' alt='GitHub'></a>
+                <a href="https://www.youtube.com/sample_name/" target='_blank'><img src='./icon_yt.png' alt='YouTube'></a>
+                <a href="https://www.telegram.org/sample_name/" target='_blank'><img src='./icon_tg.png' alt='Telegram'></a>
+                <a href="https://www.linkedin.com/sample_name/" target='_blank'><img src='./icon_in.png' alt='LinkedIn'></a>
+                </div>
+                <p>I am open to your offers of cooperation and will be glad to take part in your projects</p>
+            </section>
+            
+        </main>
+        
+        <footer>
+            <p>This portfilo page is a student project created for educational purposes</p>
+            <p>Igor Grabeklis<br />
+            feb'2024</p>
+        </footer>
+        
+        <script>
+            let paral1 = document.querySelector('.parallax1');
+            let paral2 = document.querySelector('.parallax2');
+            let paral3 = document.querySelector('.parallax3');
+            let paral4 = document.querySelector('.parallax4');
+            window.addEventListener('mousemove', function(e) {
+            let x = e.clientX / window.innerWidth;
+            let y = e.clientY / window.innerHeight;  
+            paral1.style.transform = 'translate(-' + x * 70 + 'px, -' + y * 70 + 'px)';
+            paral2.style.transform = 'translate(-' + x * 120 + 'px, -' + y * 120 + 'px)';
+            paral3.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+            paral4.style.transform = 'translate(-' + x * 65 + 'px, -' + y * 65 + 'px)';
+});
+        </script>
+        
+    </body>
+</html>
