@@ -9,3 +9,7 @@ function work(t) {
 function sayBye() {
 	alert('Goodbye from Git!');
 }
+
+function smthNew() {
+	alert('smthNew!');
+}
