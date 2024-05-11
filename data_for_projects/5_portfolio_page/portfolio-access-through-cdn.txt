@@ -1,2 +1,2 @@
 portfolio access through cdn:
-https://rawcdn.githack.com/drakofm/base_cloud/21ff2aec3c21d6a8f204ccf0b1d58691b2499b71/data_for_projects/5_portfolio_page/portfolio_project.html
+https://rawcdn.githack.com/drakofm/base_cloud/5f6ebb3dba57143fdef5c2a81c66fd1b21eecf13/data_for_projects/5_portfolio_page/portfolio_project.html
